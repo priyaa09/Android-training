@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Scroll View</string>
+    <string name="article_title">Android Layout</string>
+    <string name="article_subtitle">public class ScrollView extends FrameLayout</string>
+    <string name="article_text">In Android, a ScrollView is a view group that is used to make vertically scrollable views. A scroll view contains a single direct child only. In order to place multiple views in the scroll view, one needs to make a view group(like LinearLayout) as a direct child and then we can define many views inside it. A ScrollView supports Vertical scrolling only, so in order to create a horizontally scrollable view, HorizontalScrollView is used.
+    As is talked about in this post, sometimes you want the ScrollView content to fill the screen. For example, if you had some buttons at the end of a readme. You want the buttons to always be at the end of the text and at bottom of the screen, even if the textt
+
+    If the content scrolls, everything is fine. However, if the content is smaller than the size of the screen, the buttons are not at the bottom.
+    This can be solved with a combination of using fillViewPort on the ScrollView and using a layout weight on the content. Using fillViewPort makes the ScrollView fill the parent area. Setting the layout_weight on one of the views in the LinearLayout makes that view expand to fill any extra space.
+    The android.widget.ScrollView class provides the functionality of scroll view. ScrollView is used to scroll the child elements of palette inside ScrollView. Android supports vertical scroll view as default scroll view. Vertical ScrollView scrolls elements vertically.
+
+    Android uses HorizontalScrollView for horizontal ScrollView.
+        \n\n
+        www.google.com
+
+        \n\n
+
+    In android, ScrollView is a kind of layout that is useful to add vertical or horizontal scroll bars to the content which is larger than the actual size of layouts such as linearlayout, relativelayout, framelayout, etc.
+
+    Generally, the android ScrollView is useful when we have content that doesn’t fit our android app layout screen. The ScrollView will enable a scroll to the content which is exceeding the screen layout and allow users to see the complete content by scrolling.
+
+    The android ScrollView can hold only one direct child. In case, if we want to add multiple views within the scroll view, then we need to include them in another standard layout like linearlayout, relativelayout, framelayout, etc.
+
+    To enable scrolling for our android applications, ScrollView is the best option but we should not use ScrollView along with ListView or Gridview because they both will take care of their own vertical scrolling.
+    In android, ScrollView supports only vertical scrolling. In case, if we want to implement horizontal scrolling, then we need to use a HorizontalScrollView component.
+
+    The android ScrollView is having a property called android:fillViewport, which is used to define whether the ScrollView should stretch it’s content to fill the viewport or not.
+
+    Now we will see how to use ScrollView with linearlayout to enable scroll view to the content which is larger than screen layout in android application with examples.
+
+    Android ScrollView Example
+    Following is the example of enabling vertical scrolling to the content which is larger than the layout screen using an android ScrollView object.
+
+    Create a new android application using android studio and give names as ScrollViewExample. In case if you are not aware of creating an app in android studio check this article Android Hello World App.
+    Once we create an application, open activity_main.xml file from \res\layout folder path and write the code like as shown below.
+
+    If you observe the above result, ScrollView provided a vertical scrolling for linearlayout whenever the content exceeds the layout screen.
+    As we discussed, ScrollView can provide only vertical scrolling for the layout. In case, if we want to enable horizontal scrolling, then we need to use HorizontalScrollView in our application.
+
+    We will see how to enable horizontal scrolling for the content which is exceeding the layout screen in the android application.
+Kotlin is a statically typed,
+                 general-purpose programming language developed
+                 by JetBrains, that has built world-class IDEs
+                 like IntelliJ IDEA, PhpStorm, Appcode, etc.
+                 It was first introduced by JetBrains in 2011
+                 and a new language for the JVM. Kotlin is
+                 object-oriented language, and a “better language”
+                 than Java, but still be fully interoperable
+                 with Java code. Kotlin is sponsored by Google,
+                 announced as one of the official languages for
+                 Android Development in 2017.
+                 Advantages of Kotlin language:
+                 Easy to learn – Basic is almost similar to java.
+                 If anybody worked in java then easily understand
+                 in no time. Kotlin is multi-platform – Kotlin is
+                 supported by all IDEs of java so you can write
+                 your program and execute them on any machine
+                 which supports JVM. It’s much safer than Java.
+                 It allows using the Java frameworks and libraries
+                 in your new Kotlin projects by using advanced
+                 frameworks without any need to change the whole
+                 project in Java. Kotlin programming language,
+                 including the compiler, libraries and all the
+                 tooling is completely free and open source and
+                 available on github. Here is the link for
+                 Github https://github.com/JetBrains/kotlin
+                 Applications of Kotlin language:
+                 You can use Kotlin to build Android Application.
+                 Kotlin can also compile to JavaScript, and making
+                 it available for the frontend. It is also designed
+                 to work well for web development and server-side
+                 development.Kotlin is a statically typed, general-purpose
+                 programming language developed by JetBrains that
+                 has built world-class IDEs like IntelliJ IDEA,
+                 PhpStorm, Appcode, etc. It was first introduced
+                 by JetBrains in 2011.Kotlin is object-oriented
+                 language and a better language than Java, but still
+                 be fully interoperable with Java code. A constructor
+                 is a special member function that is invoked when
+                 an object of the class is created primarily to initialize
+                 variables or properties. A class needs to have a constructor
+                 and if we do not declare a constructor, then the compiler
+                 generates a default constructor.
+                 Kotlin has two types of constructors –
+                 Primary Constructor
+                 Secondary Constructor
+                 A class in Kotlin can have at most one primary
+                 constructor, and one or more secondary constructors.
+                 The primary constructor
+                 initializes the class, while the secondary
+                 constructor is used
+                 to initialize the class and introduce some extra logic.
+                 Explanation:
+                 When we create the object add for the class then
+                 the values 5 and 6
+                 passes to the constructor. The constructor
+                 parameters a and b
+                 initialize with the parameters 5 and 6 respectively.
+                 The local variable c contains the sum of variables.
+                 In the main, we access the property of
+                 constructor using ${add.c}.
+                 Explanation:
+                 Here, we have initialized the constructor
+                 parameters with some
+                 default values emp_id = 100 and emp_name = “abc”.
+                 When the object emp is created we passed the values for
+                 both the parameters so it prints those values.
+                 But, at the time of object emp2 creation,
+                 we have not passed
+                 the emp_name so initializer block uses
+                 the default values and
+                 print to the standard output.</string>
+</resources>
