@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@color/lightYellow"
+    android:layout_weight="100">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/randomNo"
+        android:textStyle="bold"
+        android:padding="20dp"
+
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:text="03-09-2021"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/date"/>
+</RelativeLayout>
